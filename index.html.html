@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Qualificação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #02ff02;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #333333;
+        }
+        .section h3 {
+            color: #333333;
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #333333;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checklist de Qualificação</h1>
+        <h2>Projeto de IA para Atendimento</h2>
+
+        <div class="section">
+            <h3>Informações da Empresa</h3>
+            <label for="nome_empresa">Nome da Empresa:</label>
+            <input type="text" id="nome_empresa" name="nome_empresa">
+
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj">
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco">
+
+            <label for="nome_responsavel">Nome do Responsável:</label>
+            <input type="text" id="nome_responsavel" name="nome_responsavel">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
+
+        <div class="section">
+            <h3>1. Canais de Atendimento</h3>
+            <label for="canais_atendimento">Quais canais digitais vocês utilizam atualmente para atendimento? (WhatsApp, Instagram, outros?)</label>
+            <textarea id="canais_atendimento" name="canais_atendimento"></textarea>
+
+            <label for="automacao_canais">Há alguma automação ativa nesses canais?</label>
+            <textarea id="automacao_canais" name="automacao_canais"></textarea>
+
+            <label for="volume_atendimentos">Qual é o volume médio de atendimentos por dia/semana?</label>
+            <input type="text" id="volume_atendimentos" name="volume_atendimentos">
+        </div>
+
+        <div class="section">
+            <h3>2. Serviços e Produtos</h3>
+            <label for="servicos_produtos_ia">Quais serviços e produtos precisam ser oferecidos pela IA?</label>
+            <textarea id="servicos_produtos_ia" name="servicos_produtos_ia"></textarea>
+
+            <label for="pacotes_precos">Vocês trabalham com pacotes ou preços fixos? Pode detalhar?</label>
+            <textarea id="pacotes_precos" name="pacotes_precos"></textarea>
+
+            <label for="informacoes_reserva">Quais informações o cliente precisa fornecer para efetuar uma reserva?</label>
+            <textarea id="informacoes_reserva" name="informacoes_reserva"></textarea>
+        </div>
+
+        <div class="section">
+            <h3>3. Atendimento e Qualificação</h3>
+            <label for="duvidas_frequentes">Quais são as dúvidas mais frequentes dos clientes?</label>
+            <textarea id="duvidas_frequentes" name="duvidas_frequentes"></textarea>
+
+            <label for="dados_qualificar_cliente">Quais dados vocês precisam capturar para qualificar um cliente interessado?</label>
+            <textarea id="dados_qualificar_cliente" name="dados_qualificar_cliente"></textarea>
+
+            <label for="criterios_reservas">Existem critérios para aceitar ou rejeitar reservas?</label>
+            <textarea id="criterios_reservas" name="criterios_reservas"></textarea>
+        </div>
+
+        <div class="section">
+            <h3>4. Processos e Integrações</h3>
+            <label for="sistemas_atendimento_gestao">Quais sistemas vocês utilizam atualmente no atendimento e na gestão das reservas?</label>
+            <textarea id="sistemas_atendimento_gestao" name="sistemas_atendimento_gestao"></textarea>
+
+            <label for="sistema_me_atende">Como o sistema Me Atende funciona no dia a dia de vocês?</label>
+            <textarea id="sistema_me_atende" name="sistema_me_atende"></textarea>
+
+            <label for="funcionalidades_automatizar">Quais funcionalidades ou etapas do atendimento vocês gostariam de automatizar ou integrar com a IA?</label>
+            <textarea id="funcionalidades_automatizar" name="funcionalidades_automatizar"></textarea>
+
+            <label for="api_conexao_sistema">Existe alguma API, painel ou forma da IA se conectar ao sistema atual?</label>
+            <textarea id="api_conexao_sistema" name="api_conexao_sistema"></textarea>
+
+            <label for="sistema_pagamento">Vocês utilizam algum sistema de pagamento? Qual seria a plataforma ideal para integrar com a IA?</label>
+            <textarea id="sistema_pagamento" name="sistema_pagamento"></textarea>
+
+            <label for="ferramenta_processo_adicional">Há alguma ferramenta ou processo adicional que gostariam que a IA se conectasse?</label>
+            <textarea id="ferramenta_processo_adicional" name="ferramenta_processo_adicional"></textarea>
+        </div>
+
+        <div class="section">
+            <h3>5. Equipe e Operação</h3>
+            <label for="atendimento_equipe">Como é feito o atendimento atualmente pela equipe?</label>
+            <textarea id="atendimento_equipe" name="atendimento_equipe"></textarea>
+
+            <label for="horario_funcionamento">Qual é o horário de funcionamento/atendimento da equipe?</label>
+            <input type="text" id="horario_funcionamento" name="horario_funcionamento">
+
+            <label for="ia_substituir_complementar">A IA vai substituir ou complementar o atendimento humano?</label>
+            <textarea id="ia_substituir_complementar" name="ia_substituir_complementar"></textarea>
+
+            <label for="responsavel_revisar">Quem será o responsável por revisar atendimentos que a IA não resolver?</label>
+            <input type="text" id="responsavel_revisar" name="responsavel_revisar">
+        </div>
+
+        <div class="section">
+            <h3>6. Pós-venda e Relacionamento</h3>
+            <label for="comunicacao_acompanhamento">Existe algum tipo de comunicação de acompanhamento após a reserva?</label>
+            <textarea id="comunicacao_acompanhamento" name="comunicacao_acompanhamento"></textarea>
+
+            <label for="interesse_captar_leads">Existe interesse em captar leads para ações futuras ou campanhas?</label>
+            <textarea id="interesse_captar_leads" name="interesse_captar_leads"></textarea>
+        </div>
+
+        <div class="section">
+            <h3>7. Objetivos e Resultados Esperados</h3>
+            <label for="objetivo_ia">Qual é o principal objetivo da IA no atendimento?</label>
+            <textarea id="objetivo_ia" name="objetivo_ia"></textarea>
+
+            <label for="medir_sucesso">Como vocês pretendem medir o sucesso do projeto?</label>
+            <textarea id="medir_sucesso" name="medir_sucesso"></textarea>
+        </div>
+
+        <!-- Add a submit button if needed -->
+        <!-- <button type="submit">Enviar Formulário</button> -->
+    </div>
+</body>
+</html
